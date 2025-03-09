@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private GoogleMap mMap;
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 1;
     // Intervalo de 5 minutos = 300000 ms
-    private static final long INTERVAL = 15000;
+    private static final long INTERVAL = 300000;
     private Handler handler;
     private Runnable locationRunnable;
 
