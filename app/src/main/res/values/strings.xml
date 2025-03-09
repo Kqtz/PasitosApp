@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">PasitosApp</string>
+    <string name="google_maps_key"
+        templateMergeStrategy="preserve"
+        translatable="false">
+ AIzaSyDXjG62sRCpXUF_FwxZjvDT_JaZcjwGLY0
+ </string>
+    <string name="marker_title">Posición Guardada</string>
+    <!-- La cadena marker_snippet usa un parámetro para el nivel de batería -->
+    <string name="marker_snippet">Batería: %1$d%%</string>
+    <string name="permission_not_granted">Permiso de localización no concedido.</string>
+    <string name="location_not_available">Ubicación no disponible.</string>
+    <string name="zoom_in">Acercar</string>
+    <string name="zoom_out">Alejar</string>
+
+</resources>
