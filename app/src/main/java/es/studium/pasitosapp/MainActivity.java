@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private GoogleMap mMap;
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 1;
     // Intervalo de 5 minutos = 300000 ms
-    private static final long INTERVAL = 300000;
+    private static final long INTERVAL = 15000;
     private Handler handler;
     private Runnable locationRunnable;
 
@@ -166,7 +166,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                         .position(position)
                         .title(getString(R.string.marker_title))
                         .snippet(getString(R.string.marker_snippet, batteryLevel))
-                        .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
+                        .icon(bitmapDescriptorFromVector(this, R.drawable.ic_marker)));
             } else {
                 Log.e("PasitosApp", "Error al insertar la ubicación en la base de datos.");
             }
